@@ -5,58 +5,267 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: #edeff0;
+  background: #edeff0;   
 }
 
 #container {
-  max-width: 960px;
-  background: #fff;
+  max-width: 100%;
   margin: 0 auto;
   height: 100%; /* new line */
 }
 
+
 p {
-  max-width: 350px;
-  margin: 35px auto 0;
-  line-height: 2em;
+  max-width: 95%;
+  margin: 5px auto;
+  line-height: 1em;
   text-align: left;
+  padding-bottom:10px;
 }
 
 a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
+  margin-left: -2em;
+    font-size: 2em;
 }
 
 a:hover {
-  color: #111;
+  
+  color: #823f02;
 }
 
 header {
   padding-top: 10px;
+  background: white;   
+  width:95%;
+  margin:auto;
 }
 
 header nav {
-  padding-bottom: 50px;
-  text-align: left;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 header nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
+  
+  margin: 0 auto;
+  padding-bottom:1.5em;
 
+}
+ul{
+  list-style-type: none;
+
+}
 main {
-  padding-top: 50px;
+  padding-top: 10px;
+  background: #edeff0;    
+  width:95%;
+  margin:auto;
 }
 
 main h2 {
-  font-size: 28px;
+  font-size: 18px;
 }
 
 footer {
   width: 100%;
-  margin-top: 100px;
-  padding-bottom: 30px;
-  color: #ba8058;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  color: #ba8058; 
 }
+/* styling for small icons in navigation.  */
+
+
+	
+
+
+.navSvg{
+visibility: hidden;
+}
+
+/* style company logo  */
+.st0{
+  fill:#BA8058;
+}
+.st1{
+  fill:#EAAA7F;
+}
+
+.st2{
+  fill:#F4C6A6;
+}
+
+.trans:hover{
+    transform: scale(1.3)
+}
+
+.svgLogo{
+   height: 140px;
+   width:120px;
+   margin:auto;
+}
+.hide-sm{
+  opacity:0;
+}
+/* style corgis */
+/*.dogRow{
+  display:flex;
+}*/
+
+.corgiIcons{
+height: 120px;
+width: 120px;
+flex-direction: row;
+padding:10px;
+
+}   
+
+cgi-One{
+  fill: #a87e59;
+  flex-direction: row;
+}
+.tan{
+fill: #a87e59;
+color: #a87e59;
+}
+.biscuit{
+  fill:#efccac;
+  color:#efccac;
+}
+.fudge{
+fill:#723803;
+color:#723803;
+}
+.slate{
+  fill:#51504f;
+  color:#51504f;
+  }
+/*************************************
+/* Media Querry   
+=====================================*/
+@media only screen and (min-width: 425px){
+
+
+  #container {
+    max-width: 960px;
+    /* background: #fff;   */
+    background: url('svgs/background.svg');
+    margin: 0 auto;
+    height: 100%; /* new line */
+  }
+  
+  
+  p {
+    max-width: 350px;
+    margin: 35px auto 0;
+    line-height: 2em;
+    text-align: left;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #39add1;
+    font-weight: 700;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #39add1;
+    font-weight: 700;
+    margin-left: 0em;
+      font-size: 1em;
+  }
+  a:hover {
+    /*color: #111;  */
+    color: #823f02;
+  }
+  
+  header {
+    padding-top: 10px;
+    background: #fcfcfc;   
+    width:80%;
+    margin:auto;
+  }
+  
+  header nav {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  main {
+    padding-top: 50px;
+    background: #fcfcfc;   
+    width:80%;
+    margin:auto;
+  }
+  
+  main h2 {
+    font-size: 28px;
+  }
+  
+  footer {
+    padding-top:3em;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    color: #ba8058;
+    background: #fcfcfc;
+  }
+  /* styling for small icons in navigation.  */
+  
+  .trans{
+    transition: transform .2s ease-out;
+    transform-origin: 50% 50%;
+  }
+   
+  .navSvg{
+  visibility: visible;
+  height: 13px;
+  width:13px;
+  
+  }
+  
+  .navSvg:hover {
+    fill:#BA8058;
+    transform:rotate(15deg);
+  }  
+
+  
+  
+  .trans:hover{
+      transform: scale(1.3) rotate(15deg);
+
+  }
+  
+  .svgLogo{
+     height: 140px;
+     width:120px;
+     margin:auto;
+  
+  }
+  .hide-sm{
+    opacity:0;
+  }
+  /* style corgis */
+  
+  
+  .corgiIcons{
+  height: 120px;
+  width: 120px;
+  /*display:inline-block;*/
+  padding:10px;
+  }
+  .hide-sm{
+    opacity:100;
+  }
+  .logoText{
+    display:none;
+  }
+} /* END MEDIA QUERY.*/
