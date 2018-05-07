@@ -29,13 +29,21 @@ a {
   font-weight: 700;
   margin-left: -2em;
     font-size: 2em;
-}
-
-a:hover {
+  }
+/*nav li:hover{
   
   color: #823f02;
-}
+}*/
+/*a:hover,
+svg:hover {
+  
+  color: #823f02;
+}*/
+li{
+  fill:#39add1;
+   color: #39add1;
 
+}
 header {
   padding-top: 10px;
   background: white;   
@@ -51,6 +59,7 @@ header nav {
 header nav ul li {
   
   margin: 0 auto;
+  
   padding-bottom:1.5em;
 
 }
@@ -68,7 +77,10 @@ main {
 main h2 {
   font-size: 18px;
 }
-
+h3{
+  color:#ba8058;
+  
+}
 footer {
   width: 100%;
   margin-top: 10px;
@@ -86,16 +98,6 @@ visibility: hidden;
 }
 
 /* style company logo  */
-.st0{
-  fill:#BA8058;
-}
-.st1{
-  fill:#EAAA7F;
-}
-
-.st2{
-  fill:#F4C6A6;
-}
 
 .trans:hover{
     transform: scale(1.3)
@@ -110,35 +112,38 @@ visibility: hidden;
   opacity:0;
 }
 /* style corgis */
-/*.dogRow{
-  display:flex;
-}*/
+
 
 .corgiIcons{
 height: 120px;
 width: 120px;
-flex-direction: row;
 padding:10px;
 
 }   
-
-cgi-One{
-  fill: #a87e59;
-  flex-direction: row;
+.dogRow{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
 }
-.tan{
+#dogRow div{
+ display:flex;
+  flex-direction: column;
+  
+}
+
+.sable{
 fill: #a87e59;
 color: #a87e59;
 }
-.biscuit{
+.fawn{
   fill:#efccac;
   color:#efccac;
 }
-.fudge{
+.red{
 fill:#723803;
 color:#723803;
 }
-.slate{
+.stone{
   fill:#51504f;
   color:#51504f;
   }
@@ -165,22 +170,13 @@ color:#723803;
   }
   
   a {
-    text-decoration: none;
-    color: #39add1;
-    font-weight: 700;
+        margin-left: 0em;
+      font-size: 1em;
+     padding:10px; 
   }
   
-  a {
-    text-decoration: none;
-    color: #39add1;
-    font-weight: 700;
-    margin-left: 0em;
-      font-size: 1em;
-  }
-  a:hover {
-    /*color: #111;  */
-    color: #823f02;
-  }
+  
+  
   
   header {
     padding-top: 10px;
@@ -210,6 +206,10 @@ color:#723803;
     font-size: 28px;
   }
   
+  h3{    
+    margin-left: -1.2em;
+    margin-top: -.5em; 
+  }
   footer {
     padding-top:3em;
     width: 80%;
@@ -225,18 +225,24 @@ color:#723803;
     transform-origin: 50% 50%;
   }
    
-  .navSvg{
+  .navSvg {
   visibility: visible;
   height: 13px;
   width:13px;
+  padding-right:10px;
   
   }
   
   .navSvg:hover {
-    fill:#BA8058;
-    transform:rotate(15deg);
+    fill:#823f02;
+    transform:rotate(25deg);
   }  
 
+  a:hover{
+    fill:#823f02;
+    color: #823f02;
+    transform: scale(1.2);
+  }  
   
   
   .trans:hover{
@@ -268,4 +274,9 @@ color:#723803;
   .logoText{
     display:none;
   }
+  #dogRow div{
+    display:flex;
+     flex-direction: column;
+     
+   }
 } /* END MEDIA QUERY.*/
