@@ -233,7 +233,7 @@ color:#723803;
   
   }
   
-  .navSvg:hover {
+  a:hover .navSvg:hover {
     fill:#823f02;
     transform:rotate(25deg);
   }  
